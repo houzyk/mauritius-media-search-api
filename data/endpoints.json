@@ -1,0 +1,26 @@
+{
+  "availableEndpoints": {
+    "lexpress": {
+      "url": "https://www.google.mu/search?q=site:lexpress.mu+",
+      "emptySpace": "%"
+    },
+    "defiMedia": {
+      "url": "https://defimedia.info/recherche-articles?combine=",
+      "emptySpace": "+"
+    },
+    "star": {
+      "url": "https://starpress.info/?s=",
+      "emptySpace": "%20"
+    },
+    "IONNews": {
+      "url": "https://ionnews.mu/?s=",
+      "emptySpace": "+"
+    }
+  },
+  "unavailableEndpoints": {
+    "leMauricien": {
+      "url": "",
+      "emptySpace": ""
+    }
+  }
+}
