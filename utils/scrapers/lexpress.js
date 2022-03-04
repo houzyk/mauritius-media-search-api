@@ -1,5 +1,5 @@
-const lexpressScraper = () => {
+module.exports = function lexpressScraper(query) {
+  const result = []
   // todo
+  return result;
 }
-
-export default lexpressScraper;

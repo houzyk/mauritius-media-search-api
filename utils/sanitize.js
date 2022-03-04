@@ -1,6 +1,4 @@
-const sanitize = (query) => {
+module.exports = function sanitize (query) {
   // todo
   return false;
 }
-
-export default sanitize;

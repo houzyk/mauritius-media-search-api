@@ -1,5 +1,5 @@
-const defiMediaScraper = () => {
+module.exports = function defiMediaScraper(query) {
+  const result = []
   // todo
+  return result;
 }
-
-export default defiMediaScraper;

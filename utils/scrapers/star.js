@@ -1,5 +1,5 @@
-const starScraper = () => {
+module.exports = function starScraper(query) {
+  const result = []
   // todo
+  return result;
 }
-
-export default starScraper;
