@@ -1,4 +1,4 @@
-const sanitize = () => {
+const sanitize = (query) => {
   // todo
   return false;
 }
