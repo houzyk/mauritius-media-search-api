@@ -1,4 +1,3 @@
 module.exports = function sanitize (query) {
-  // todo
-  return false;
+  return /^[A-Za-z0-9-]*$/.test(query);
 }

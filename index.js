@@ -17,7 +17,7 @@ const response = {
   results: []
 }
 
-app.get('/:query', (req, res) => {
+app.get('/:query', async (req, res) => {
   if (sanitize(req.params.query)) {
     const parsedQuery = parser(req.params.query);
 
