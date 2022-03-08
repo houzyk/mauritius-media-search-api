@@ -20,16 +20,19 @@ const response = {
 app.get('/:query', (req, res) => {
   if (sanitize(req.params.query)) {
     const parsedQuery = parser(req.params.query);
-    const articleSets = [defiMediaScraper(parsedQuery),
-                        lexpressScraper(parsedQuery),
-                        starScraper(parsedQuery),
-                        IONNewsScraper(parsedQuery)]
+
+    const articleSets = [await defiMediaScraper(parsedQuery),
+                        await lexpressScraper(parsedQuery),
+                        await starScraper(parsedQuery),
+                        await IONNewsScraper(parsedQuery)]
 
     articleSets.forEach((articleSet) => {
-      articleSet.forEach((article) => {
-        response.results.push(article);
-        response.numberOfArticles += 1;
-      });
+      if (articleSet.length > 0) {
+        articleSet.forEach((article) => {
+          response.results.push(article);
+          response.numberOfArticles += 1;
+        });
+      }
     });
 
     res.json(response);
